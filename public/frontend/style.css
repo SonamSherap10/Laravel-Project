@@ -5,7 +5,7 @@ ul{list-style-type:none;}
 /*----MAIN PANEL----*/
 #mainPan{width:723px;}
 /*----Left Panel----*/
-#leftPan{width:389px; float:left; background:url(images/headerbg.jpg) 0 0 no-repeat #fff; color:#1A1A1A;}
+#leftPan{width:850px; float:left; background:url(images/headerbg.jpg) 0 0 no-repeat #fff; color:#1A1A1A;}
 #logoPan{width:317px; height:125px; display:block; margin:63px 0 48px 32px;}
 
 #leftbodyPan{width:294px; margin:0 0 0 58px;}
@@ -35,15 +35,15 @@ ul{list-style-type:none;}
 /*----/Left Panel----*/
 
 /*----Right Panel----*/
-#rightPan{width:334px; float:left; background:url(images/rightpanbg.gif) 0 0 repeat-y; height:1510px;}
-#rightTopPan{width:334px; height:432px; background:url(images/menubg.jpg) 0 0 no-repeat;}
+#rightPan{width:434px; float:left; background:url(images/rightpanbg.gif) 0 0 repeat-y; height:1510px;}
+#rightTopPan{width:444px; height:432px; background:url(images/menubg.jpg) 0 0 no-repeat;}
 
-#rightTopPan ul{width:94px; height:250px; position:absolute; top:94px; left:420px;}
-#rightTopPan ul li{width:94px; height:27px; border-bottom:1px solid #E1E1E1;}
-#rightTopPan ul li a{width:76px; height:26px; display:block; background:url(images/arrow.gif) 0 50% no-repeat #fff; color:#1B0000; font:11px/26px "Trebuchet MS", Arial, Helvetica, sans-serif; padding:0 0 0 18px; text-decoration:none; text-transform:uppercase;}
-#rightTopPan ul li a:hover{width:76px; height:26px; display:block; background:url(images/arrow.gif) 0 50% no-repeat #fff; color:#CC0000;}
+#rightTopPan ul{width:154px; height:250px; position:absolute; top:94px; left:620px;}
+#rightTopPan ul li{width:154px; height:27px; border-bottom:1px solid #E1E1E1;}
+#rightTopPan ul li a{width:106px; height:26px; display:block; background:url(images/arrow.gif) 0 50% no-repeat #fff; color:#1B0000; font:15px/26px "Trebuchet MS", Arial, Helvetica, sans-serif; padding:0 0 0 18px; text-decoration:none; text-transform:uppercase;}
+#rightTopPan ul li a:hover{width:106px; height:26px; display:block; background:url(images/arrow.gif) 0 50% no-repeat #fff; color:#CC0000;}
 
-#rightTopPan ul li.home{width:76px; height:26px; display:block; background:url(images/arrow.gif) 0 50% no-repeat #FBFBFB; color:#CC0000; font:11px/26px "Trebuchet MS", Arial, Helvetica, sans-serif; padding:0 0 0 18px; text-decoration:none; text-transform:uppercase;}
+#rightTopPan ul li.home{width:76px; height:26px; display:block; background:url(images/arrow.gif) 0 50% no-repeat #FBFBFB; color:#CC0000; font:15px/26px "Trebuchet MS", Arial, Helvetica, sans-serif; padding:0 0 0 18px; text-decoration:none; text-transform:uppercase;}
 #rightTopPan ul li.contact{border:none;}
 
 
@@ -81,3 +81,125 @@ ul{list-style-type:none;}
 #footerPancss a{width:75px; height:24px; background:url(images/arrow2-hover.gif) 90% 50% no-repeat #DFDFDF; display:block; font:14px/24px "Trebuchet MS",Arial, Helvetica, sans-serif; margin:0; padding:0 0 0 5px; color:#111111; text-transform:uppercase; text-decoration:none; font-weight:bold;}
 #footerPancss a:hover{background:url(images/arrow2-normal.gif) 90% 50% no-repeat #DFDFDF; color:#111; text-decoration:none;}
 
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Main container */
+#mainPan {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Left panel styling */
+#leftPan {
+  width: 70%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#logoPan img {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+#leftbodyPan h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form styling */
+form {
+  width: 100%;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  color: #333;
+}
+
+form input[type="text"],
+form textarea,
+form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  color: #333;
+}
+
+form button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Right panel styling */
+#rightPan {
+  width: 25%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#rightTopPan ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#rightTopPan ul li {
+  margin-bottom: 10px;
+}
+
+#rightTopPan ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#rightTopPan ul li a:hover {
+  color: #4CAF50;
+}
+
+/* Alert message styling */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.alert-danger {
+  background-color: #f44336;
+  color: white;
+}
+
+.alert-success {
+  background-color: #4CAF50;
+  color: white;
+}

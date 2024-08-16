@@ -14,7 +14,7 @@ class BlogController extends Controller
     {   
         $blogs = Blog ::all();
 
-        return view("backend.index",compact('blogs'));
+        return view("backend.blog.index",compact('blogs'));
     }
 
     /**
@@ -34,15 +34,14 @@ class BlogController extends Controller
         $request->validate([
             'title' => "required",
             'description' => "required",
-            'image' => "required|mimes:jpg,jpeg,png,gif|max:2048",
+            'image' => "required",
         ]);
     
         // Create a new Blog instance
         $blog = new Blog();
         $blog->title = $request->title;
         $blog->description = $request->description;
-    
-        // Handle the image upload
+        $blog->foreignId('tag');
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $imageName = $image->getClientOriginalName();
